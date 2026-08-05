@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121212;
+}
+
+
+.calculator {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 320px;
+}
+
+
+.display {
+    background-color: #333;
+    color: #fff;
+    font-size: 3rem;
+    text-align: right;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+.btn {
+    border: none;
+    background-color: #444;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Efeito ao clicar no botão */
+.btn:active {
+    background-color: #666;
+}
+
+.btn-operator {
+    background-color: #ff9500;
+    font-weight: bold;
+}
+
+.btn-operator:hover {
+    background-color: #e08300;
+}
+
+.btn-clear {
+    background-color: #d9534f;
+}
+
+.btn-clear:hover {
+    background-color: #c9302c;
+}
+
+.btn-equals {
+    background-color: #5cb85c;
+}
+
+.btn-equals:hover {
+    background-color: #4cae4c;
+}
+
+.btn-zero {
+    grid-column: span 2;
+}
